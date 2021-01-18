@@ -26,6 +26,7 @@ As a back-end developer, I needed to created "ready to use" parts of code which 
 | **[metadata-twitter.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-twitter.liquid)**      | Generate MetaData Twitter for your template |
 | **[random-number.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/random-number.liquid)**      | Get a random number |
 | **[random-product.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/random-product.liquid)**      | Get a random product from shop or specific collection |
+| **[json-ld-search.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/json-ld-search.liquid)**      | Generate JSON-LD [sitelinks search box](https://developers.google.com/search/docs/data-types/sitelinks-searchbox) |
 
 # Feedback
 
