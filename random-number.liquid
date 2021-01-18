@@ -1,0 +1,12 @@
+{%- comment -%}
+    Wanna change the range, just edit line 10 & 11
+
+    Basic usage :
+    {% render 'random-test' %}
+    {{ random_number }} -> here's your random number
+{%- endcomment -%}
+
+{%- assign min = 0 -%}
+{%- assign max = 9999999 -%}
+{%- assign diff = max | minus: min -%}
+{%- assign random_number = "now" | date: "%N" | modulo: diff | plus: min -%}

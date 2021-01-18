@@ -1,0 +1,31 @@
+{%- comment -%}
+    Basic usage to get a random product from all your shop :
+    {%- render 'random-product' -%}
+    {{ random_product }} -> here's your random product
+
+    Basic usage to get a random product from a specific collection :
+    {%- render 'random-product' with specific_collection: 'sport' -%}
+    {{ random_product }} -> here's your random product
+{%- endcomment -%}
+
+{%- if specific_collection -%}
+    {%- assign all_products_from_collection = collections[specific_collection].products -%}
+{%- else -%}
+    {%- assign all_products_from_collection = collections['all'].products -%}
+{%- endif -%}
+
+{%- assign all_products_random = '' -%}
+
+{%- for product_splitted in all_products_from_collection -%}
+    {%- assign all_products_random = all_products_random | append: product_splitted.handle | append: ',' -%}
+{%- endfor -%}
+
+{%- assign all_products_random_splited = all_products_random | split: ',' -%}
+
+{%- assign min = 0 -%}
+{%- assign max = all_products_random_splited.size | minus: 1 -%}
+{%- assign diff = max | minus: min -%}
+{%- assign random_number = "now" | date: "%N" | modulo: diff | plus: min -%}
+
+{%- assign random_product_slug = all_products_random_splited[random_number] -%}
+{%- assign random_product = all_products[random_product_slug] -%}

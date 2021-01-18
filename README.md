@@ -23,7 +23,9 @@ As a back-end developer, I needed to created "ready to use" parts of code which 
 | File        | Description     |
 | ------------- | ------------- |
 | **[metadata-og.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-og.liquid)**      | Generate MetaData OG for your template |
-| **[metadata-twitter.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-og.liquid)**      | Generate MetaData Twitter for your template      |
+| **[metadata-twitter.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-twitter.liquid)**      | Generate MetaData Twitter for your template |
+| **[random-number.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/random-number.liquid)**      | Get a random number |
+| **[random-product.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/random-product.liquid)**      | Get a random product from shop or specific collection |
 
 # Feedback
 
