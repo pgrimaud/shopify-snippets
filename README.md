@@ -28,6 +28,7 @@ As a back-end developer, I needed to created "ready to use" parts of code which 
 | **[random-product.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/random-product.liquid)**      | Get a random product from shop or specific collection |
 | **[json-ld-search.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/json-ld-search.liquid)**      | Generate JSON-LD [sitelinks search box](https://developers.google.com/search/docs/data-types/sitelinks-searchbox) |
 | **[json-ld-organization.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/json-ld-organization.liquid)**      | Generate JSON-LD [organization](https://schema.org/Organization) |
+| **[json-ld-product.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/json-ld-product.liquid)**      | Generate JSON-LD [product](https://developers.google.com/search/docs/data-types/product) |
 
 # Feedback
 
@@ -37,7 +38,9 @@ You found a bug? You need a new feature? You can [create an issue](https://githu
 
 This project is not affiliated with or endorsed by Shopify.
 
-Logo created using [Shopify Hatchful](https://hatchful.shopify.com/).
+[FeedArmy](https://feedarmy.com/) for JSON-LD product.
+
+Logo created with [Shopify Hatchful](https://hatchful.shopify.com/).
 
 # License
 
