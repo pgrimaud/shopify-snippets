@@ -1,4 +1,4 @@
-<center><img src="https://user-images.githubusercontent.com/1866496/104910214-494b5f00-5989-11eb-9dc2-99c366c71d41.png"/></center>
+<p align="center"><img src="https://user-images.githubusercontent.com/1866496/104910214-494b5f00-5989-11eb-9dc2-99c366c71d41.png"/></p>
 
 # About Shopify Snippets
 
