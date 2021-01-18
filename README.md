@@ -4,7 +4,10 @@ Useful .liquid snippets for Shopify themes
 
 ## Snippets
 
-- **[metadata-og.liquid](https://github.com/pgrimaud/shopify-snippets/issues)**: Generate MetaData OG for your template
+| File        | Description     |
+| ------------- | ------------- |
+| **[metadata-og.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-og.liquid)**      | Generate MetaData OG for your template |
+| **[metadata-twitter.liquid](https://github.com/pgrimaud/shopify-snippets/blob/main/metadata-og.liquid)**      | Generate MetaData Twitter for your template      |
 
 # Feedback
 

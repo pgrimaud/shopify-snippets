@@ -1,0 +1,36 @@
+{%- comment -%}
+    You have to change the Twitter handle line 6.
+    You have to change the logo asset on line 35. It must be a square picture.
+{%- endcomment -%}
+
+<meta name="twitter:site" content="@twitter_handler" />
+
+{% if template contains 'product' %}
+    <meta name="twitter:card" content="product" />
+    <meta name="twitter:title" content="{{ product.title | escape }}" />
+    <meta name="twitter:description" content="{{ product.description | strip_html | strip_newlines | truncatewords: 60, '' | escape }}" />
+    <meta name="twitter:image" content="https:{{ product.featured_image.src | product_img_url: 'large' }}" />
+    <meta name="twitter:label1" content="Price" />
+    <meta name="twitter:data1" content="{% if product.price_varies %}From {% endif %}{{ product.price | money_with_currency | strip_html }}" />
+    {% if product.vendor == blank %}
+        <meta name="twitter:label2" content="Availability" />
+        <meta name="twitter:data2" content="{% if product.available %}In stock{% else %}Out of stock{% endif %}" />
+    {% else %}
+        <meta name="twitter:label2" content="Brand" />
+        <meta name="twitter:data2" content="{{ product.vendor | escape }}" />
+    {% endif %}
+{% elsif template contains 'article' %}
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ article.title | escape }}" />
+    <meta name="twitter:description" content="{{ article.excerpt_or_content | strip_html | truncatewords: 60, '' | escape }}" />
+    {% assign img_tag = '<' | append: 'img' %}
+    {% if article.content contains img_tag %}
+        {% assign src = article.content | split: 'src="' %}
+        {% assign src = src[1] | split: '"' | first | remove: 'https:' | remove: 'http:' %}
+        {% if src %}
+            <meta property="twitter:image" content="http:{{ src }}" />
+        {% endif %}
+    {% endif %}
+{% else %}
+    <meta name="twitter:image" content="{{ 'logo-square.png' | asset_url }}" />
+{% endif %}
