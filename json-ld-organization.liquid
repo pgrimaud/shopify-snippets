@@ -1,0 +1,21 @@
+{%- comment -%}
+    You have to change the logo asset on line 11.
+    Also change social links started at line 13, with as many links you need.
+{%- endcomment -%}
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "{{ shop.url }}",
+    "logo": "{{ 'logo.png' | asset_url }}",
+    "sameAs": [
+      "{{ settings.social_facebook }}",
+      "{{ settings.social_instagram }}",
+      "{{ settings.social_twitter }}",
+      "{{ settings.social_pinterest }}",
+      "{{ settings.social_linkedin }}",
+      "{{ settings.social_youtube }}"
+    ]
+  }
+</script>
